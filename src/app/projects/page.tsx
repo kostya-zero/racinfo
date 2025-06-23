@@ -70,7 +70,7 @@ export default function Projects() {
       authorGit: "https://gitea.bedohswe.eu.org/bedohswe",
       projectGit: "https://gitea.bedohswe.eu.org/bedohswe/dobroho_vechora",
       description: "RAC client made with Bash script.",
-      tags: ["Abandoned", "RAC", "v1.99.2"],
+      tags: ["Abandoned", "RAC", "v1.0"],
     },
   ];
 
