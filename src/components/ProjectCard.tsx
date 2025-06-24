@@ -4,7 +4,6 @@ import Link from "next/link";
 type ProjectProps = {
   name: string;
   authorId: string;
-  authorGit: string;
   projectGit: string;
   description: string;
   externalLink?: string;
@@ -14,7 +13,6 @@ type ProjectProps = {
 
 function ProjectCard({
   name,
-  authorGit,
   externalDownload,
   projectGit,
   externalLink,
@@ -24,6 +22,7 @@ function ProjectCard({
 }: ProjectProps) {
   return (
     <Link
+      target={"_blank"}
       href={
         externalDownload && externalDownload ? externalLink || "" : projectGit
       }
@@ -35,18 +34,9 @@ function ProjectCard({
         <h4 className={"text-2xl text-stone-300 font-rokkitt font-semibold"}>
           {name}
         </h4>
-        {externalDownload ? (
-          <p className={"text-stone-500"}>external download</p>
-        ) : (
-          <Link
-            href={authorGit}
-            className={
-              "text-stone-500 transition-colors duration-200 hover:text-stone-50"
-            }
-          >
-            @{authorId}
-          </Link>
-        )}
+        <p className={"text-stone-500"}>
+          {externalDownload ? `external@${authorId}` : `@${authorId}`}
+        </p>
       </div>
 
       <p className={"text-stone-400 mb-1"}>{description}</p>
