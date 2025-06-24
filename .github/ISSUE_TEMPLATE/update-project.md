@@ -1,9 +1,10 @@
-﻿---
-name: Update Project.
+---
+name: Update project
 about: Request to update information about your project to the list.
-title: 'Update <project>'
-labels: [ ]
-assignees: ''
+title: Update <project>
+labels: ''
+assignees: kostya-zero
+
 ---
 
 **Specify a new URL to the Git repository:**
