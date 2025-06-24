@@ -12,15 +12,21 @@ assignees: ''
 **If project is not on Git, please provide the new URL to the project download:**
 <!-- URL to the project download page. Otherwise, leave it blank -->
 
-**Updated  project description:**
+**Updated project description:**
 <!-- What is your project about? Leave empty if it is unchanged. -->
 
-**What is your project:**
+**Updated project status (select only one, none if unchanged):**
+
+- [ ] Unrelease (Not released, but in development)
+- [ ] Active (Actively developed and maintained)
+- [ ] Abandoned (Abandoned by author)
+
+**Updated project type:**
 - [ ] Client
 - [ ] Server
 - [ ] Development tool (library, framework, etc.)
 
-**Supported features:**
+**Updated supported features:**
 - [ ] Real Address Chat protocol (RAC)
 - [ ] WebSocket Real Address Chat protocol (WRAC)
 - [ ] RAC v1.0

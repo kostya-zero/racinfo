@@ -15,6 +15,12 @@ assignees: ''
 **Project description:**
 <!-- What is your project about? -->
 
+**Current project status (select only one):**
+
+- [ ] Unrelease (Not released, but in development)
+- [ ] Active (Actively developed and maintained)
+- [ ] Abandoned (Abandoned by author)
+
 **What is your project:**
 
 - [ ] Client
