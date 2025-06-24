@@ -4,6 +4,8 @@ import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
 import Text from "@/components/blocks/Text";
 import PageTitle from "@/components/blocks/PageTitle";
+import Title from "@/components/blocks/Title";
+import InlineCode from "@/components/blocks/InlineCode";
 
 export default function Wrac() {
   return (
@@ -34,7 +36,7 @@ export default function Wrac() {
         <Title id={"receiving-messages"}>Receiving messages</Title>
         <Text>
           As the connection now can be keep-alive, and the websocket uses messages
-          for transactions, we can't just do the same as we did in RAC to get the messages.
+          for transactions, we can&apos;t just do the same as we did in RAC to get the messages.
         </Text>
         <Text>
           Now, to use those packets (<InlineCode>0x01</InlineCode> for normal reading and <InlineCode>0x02</InlineCode> for chunked reading),
