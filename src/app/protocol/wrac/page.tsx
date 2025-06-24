@@ -31,7 +31,7 @@ export default function Wrac() {
           RAC, but you should send data in binary format. Also, you can use the
           same connection multiple times, what differs from the usual RAC, where
           you had to connect the server each time you made some request. That
-          causes some differences in the receiving messages.
+          causes some differences in the messages receiving.
         </Text>
         <Title id={"receiving-messages"}>Receiving messages</Title>
         <Text>
@@ -46,7 +46,7 @@ export default function Wrac() {
         </Text>
         <Text>
           This way we can separate the packets that receive data from the packet that receives the total size.
-          In this sense, WRAC solves a big problem with usual RAC.
+          In the sence of keep-alive, WRAC solves the main problem with usual RAC.
         </Text>
         <Footer />
       </main>
