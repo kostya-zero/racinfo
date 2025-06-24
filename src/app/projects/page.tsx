@@ -154,6 +154,7 @@ export default function Projects() {
               key={server.name}
               name={server.name}
               externalDownload={server.externalDownload}
+			  externalLink={server.externalLink}
               authorId={server.authorId}
               projectGit={server.projectGit}
               description={server.description}
