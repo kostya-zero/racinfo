@@ -28,25 +28,23 @@ export default function Wrac() {
         <Text>
           WRAC (WebSocket Real Address Chat) is a community-made successor to
           RAC that uses WebSockets instead of TCP. It uses the same requests as
-          RAC, but you should send data in binary format. Also, you can use the
-          same connection multiple times, what differs from the usual RAC, where
-          you had to connect the server each time you made some request. That
-          causes some differences in the messages receiving.
+          RAC, but you should send data in binary format. Unlike regular RAC,
+          you can use the same connection multiple times—in RAC, you had to
+          reconnect to the server for every request. This changes how message
+          receiving works.
         </Text>
         <Title id={"receiving-messages"}>Receiving messages</Title>
         <Text>
-          As the connection now can be keep-alive, and the websocket uses messages
-          for transactions, we can&apos;t just do the same as we did in RAC to get the messages.
+          Since the connection can now be kept alive and WebSocket uses messages
+          for transactions, we can’t retrieve messages the same way as in RAC.
         </Text>
         <Text>
-          Now, to use those packets (<InlineCode>0x01</InlineCode> for normal reading and <InlineCode>0x02</InlineCode> for chunked reading),
-          we need to let the server know that we want to use them, and not send
-          messages (the same packet-ids). The way how to do this is just add the byte <InlineCode>0x00</InlineCode> to the start
-          of packets. For example: <InlineCode>0x00</InlineCode> <InlineCode>0x01</InlineCode> for normal reading.
-        </Text>
-        <Text>
-          This way we can separate the packets that receive data from the packet that receives the total size.
-          In the sence of keep-alive, WRAC solves the main problem with usual RAC.
+          Receiving messages in WRAC is done by sending a single packet to the
+          server with two bytes. The first byte is <InlineCode>0x00</InlineCode>
+          , which indicates that you want to receive messages, and the second
+          byte is either <InlineCode>0x01</InlineCode> or{" "}
+          <InlineCode>0x02</InlineCode>. These two bytes work the same way as in
+          RAC.
         </Text>
         <Footer />
       </main>

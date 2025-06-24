@@ -18,10 +18,10 @@ It is strongly recommended to use Docker to host Racinfo. You can use the follow
 
 ```bash
 docker build -t racinfo .
-docker up -d racinfo
+docker up -d -p 8085:8085 racinfo
 ```
 
-Racinfo by default hosts on port 8085. You can change it by using the `-p` flag in the `docker up` command, like this:
+By default, Racinfo runs on port 8085. You can change this by using the -p flag with the docker run command, like this:
 
 ```bash
 # Instead of 8085, you can use any port you want, like 3000
@@ -48,8 +48,8 @@ You can also contribute by improving the documentation or fixing bugs.
 
 Also, you should get acknowledged with these rules before contributing:
 
-- The project should be related to Real Address Chat protocol, or its successors.
-- Your project should have a Git repository, or link to its download page. We do not accept projects that are not hosted on Git or have a download link.
+- The project should be related to the Real Address Chat protocol or its successors.
+- Your project should have a Git repository or a link to its download page. We do not accept projects that are not hosted on Git or do not provide a download link.
 
 If you want to add your project to the list, please follow these steps:
 
@@ -57,4 +57,4 @@ If you want to add your project to the list, please follow these steps:
 2. Attach `add-client`, `add-server` or `add-tool` tag to the issue.
 3. Fill the issue template with the information about your tool as described in template.
 
-If you are an author or maintainer of a project that is already listed in Racinfo, you can also open an Issue with the template **"Update Project"** to update the information about your project.
+If you are the author or maintainer of a project already listed in Racinfo, you can also open an issue using the **"Update Project"** template to update your project information.
