@@ -16,7 +16,7 @@ export default function Home() {
         </Text>
         <Text>
           Want to add your project to Racinfo? Make a pull request on our
-          official GitHub repository, and we’ll review it.
+          official <a href="https://github.com/kostya-zero/racinfo">GitHub repository</a>, and we’ll review it.
         </Text>
         <Footer />
       </main>
