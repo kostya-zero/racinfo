@@ -35,7 +35,7 @@ export default function Projects() {
       name: "Mefedroniy",
       authorId: "OctoBanon-Main",
       projectGit: "https://github.com/OctoBanon-Main/mefedroniy-client",
-      description: "TUI client for Real Address Chat protocol. ",
+      description: "TUI client for Real Address Chat protocol.",
       tags: ["Active", "RAC", "v1.99.2"],
     },
     {
@@ -44,13 +44,6 @@ export default function Projects() {
       projectGit: "https://github.com/Forbirdden/Snowdrop",
       description: "Coming Soon™",
       tags: ["Unreleased", "WRAC", "RAC", "v2"],
-    },
-    {
-      name: "oWRAC",
-      authorId: "pansangg",
-      projectGit: "https://github.com/pansangg/oWRAC",
-      description: "An online WRAC client (works in web)",
-      tags: ["Unreleased", "WRAC", "v2"]
     },
     {
       name: "cRACk",
@@ -129,7 +122,7 @@ export default function Projects() {
           from external sources. They are marked with
           <InlineCode>external@</InlineCode> text at the beginning of the author
           ID. If you want to add your project to this list, please make an issue
-          on our GitHub repository.
+          on our <a href="https://github.com/kostya-zero/racinfo">GitHub repository</a>.
         </Text>
         <Title id={"clients"}>Clients</Title>
         <Text>
