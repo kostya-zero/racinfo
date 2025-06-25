@@ -46,6 +46,13 @@ export default function Projects() {
       tags: ["Unreleased", "WRAC", "RAC", "v2"],
     },
     {
+      name: "oWRAC",
+      authorId: "pansangg",
+      projectGit: "https://github.com/pansangg/oWRAC",
+      description: "An online WRAC client (works in web)",
+      tags: ["Unreleased", "WRAC", "v2"]
+    },
+    {
       name: "cRACk",
       authorId: "pansangg",
       projectGit: "https://github.com/pansangg/cRACk",

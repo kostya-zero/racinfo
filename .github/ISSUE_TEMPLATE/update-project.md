@@ -18,7 +18,7 @@ assignees: kostya-zero
 
 **Updated project status (select only one, none if unchanged):**
 
-- [ ] Unrelease (Not released, but in development)
+- [ ] Unreleased (Not released, but in development)
 - [ ] Active (Actively developed and maintained)
 - [ ] Abandoned (Abandoned by author)
 
