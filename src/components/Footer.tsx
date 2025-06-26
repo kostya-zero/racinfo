@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="flex flex-col md:flex-row justify-between items-center mb-[15px] text-sm">
       <Link
         href="https://kostyazero.com"
-        className="ml-1 text-stone-500 hover:text-stone-50 transition duration-200"
+        className="ml-1 text-stone-500 underline underline-offset-3 hover:text-stone-50 transition duration-200"
       >
         © 2025 Konstantin Zhigaylo
       </Link>
@@ -13,7 +13,7 @@ export default function Footer() {
         <p>The source code is available on</p>
         <Link
           href="https://github.com/kostya-zero/racinfo"
-          className="ml-1 text-stone-500 hover:text-stone-50 transition duration-200"
+          className="ml-1 underline underline-offset-3 text-stone-500 hover:text-stone-50 transition duration-200"
         >
           {" "}
           GitHub

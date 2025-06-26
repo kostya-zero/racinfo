@@ -9,13 +9,6 @@ import InlineCode from "@/components/blocks/InlineCode";
 export default function Projects() {
   const clients: ProjectProps[] = [
     {
-      name: "Tower",
-      authorId: "kostya-zero",
-      projectGit: "https://github.com/kostya-zero/tower",
-      description: "A modern desktop client for RAC protocol built with Tauri.",
-      tags: ["Unreleased", "WRAC", "RAC", "v2", "TLS"],
-    },
-    {
       name: "bRAC",
       authorId: "MeexReay",
       projectGit: "https://github.com/MeexReay/bRAC",
@@ -23,13 +16,11 @@ export default function Projects() {
       tags: ["Active", "WRAC", "RAC", "v2", "TLS"],
     },
     {
-      name: "clRAC",
-      externalDownload: true,
-      authorId: "sugoma",
-      externalLink: "https://wdfiles.ru/Ofx7",
-      projectGit: "",
-      description: "The official RAC client.",
-      tags: ["Unknown", "RAC", "v2"],
+      name: "cRACk",
+      authorId: "pansangg",
+      projectGit: "https://github.com/pansangg/cRACk",
+      description: "TUI RAC client on Python.",
+      tags: ["Active", "RAC", "v2"],
     },
     {
       name: "Mefedroniy",
@@ -37,6 +28,13 @@ export default function Projects() {
       projectGit: "https://github.com/OctoBanon-Main/mefedroniy-client",
       description: "TUI client for Real Address Chat protocol. ",
       tags: ["Active", "RAC", "v1.99.2"],
+    },
+    {
+      name: "Tower",
+      authorId: "kostya-zero",
+      projectGit: "https://github.com/kostya-zero/tower",
+      description: "A modern desktop client for RAC protocol built with Tauri.",
+      tags: ["Unreleased", "WRAC", "RAC", "v2", "TLS"],
     },
     {
       name: "Snowdrop",
@@ -50,14 +48,16 @@ export default function Projects() {
       authorId: "pansangg",
       projectGit: "https://github.com/pansangg/oWRAC",
       description: "An online WRAC client (works in web)",
-      tags: ["Unreleased", "WRAC", "v2"]
+      tags: ["Unreleased", "WRAC", "v2"],
     },
     {
-      name: "cRACk",
-      authorId: "pansangg",
-      projectGit: "https://github.com/pansangg/cRACk",
-      description: "TUI RAC client on Python.",
-      tags: ["Active", "RAC", "v2"],
+      name: "clRAC",
+      externalDownload: true,
+      authorId: "sugoma",
+      externalLink: "https://wdfiles.ru/Ofx7",
+      projectGit: "",
+      description: "The official RAC client.",
+      tags: ["Unknown", "RAC", "v2"],
     },
     {
       name: "CRAB",
@@ -161,7 +161,7 @@ export default function Projects() {
               key={server.name}
               name={server.name}
               externalDownload={server.externalDownload}
-			  externalLink={server.externalLink}
+              externalLink={server.externalLink}
               authorId={server.authorId}
               projectGit={server.projectGit}
               description={server.description}
