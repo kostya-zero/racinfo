@@ -2,9 +2,8 @@
 name: Add Project
 about: Request to add your project to the list.
 title: Add <project>
-labels: ''
+labels: 'add-project'
 assignees: kostya-zero
-
 ---
 
 **The URL to projects Git page:**
