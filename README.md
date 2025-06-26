@@ -44,7 +44,7 @@ pnpm start --port 8085
 If you are a developer of a client, server of development tool for Real Address Chat, you can contribute to Racinfo by adding your tool to the list. 
 You can also contribute by improving the documentation or fixing bugs.
 
-**Any pull requests related to adding/updating projects information will be rejected.**
+**Any pull requests related to adding/updating/removal projects information will be rejected.**
 
 Also, you should get acknowledged with these rules before contributing:
 
