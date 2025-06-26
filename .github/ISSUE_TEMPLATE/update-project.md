@@ -7,6 +7,12 @@ assignees: kostya-zero
 
 ---
 
+**What do you want to do?:**
+<!-- Select only one. Project removal only allowed to the projects owners. If you want to delete project, assign `remove-project` label and leave everything blank. -->
+
+- [ ] Update
+- [ ] Remove
+
 **Specify a new URL to the Git repository:**
 <!-- URL to the Git repository of your project. If you project does not have Git, leave it blank. Leave empty if it is unchanged. -->
 
