@@ -44,13 +44,6 @@ export default function Projects() {
       tags: ["Unreleased", "WRAC", "RAC", "v2"],
     },
     {
-      name: "oWRAC",
-      authorId: "pansangg",
-      projectGit: "https://github.com/pansangg/oWRAC",
-      description: "An online WRAC client (works in web)",
-      tags: ["Unreleased", "WRAC", "v2"],
-    },
-    {
       name: "clRAC",
       externalDownload: true,
       authorId: "sugoma",
@@ -116,61 +109,55 @@ export default function Projects() {
   ];
 
   return (
-    <div className={"bg-stone-900 min-h-screen font-geist"}>
-      <main
-        className={"max-w-[700px] pt-15 flex flex-col gap-4 mx-auto w-full p-4"}
-      >
-        <NavBar />
-        <PageTitle id={"projects"}>Projects</PageTitle>
-        <Text>
-          This is a curated list of projects that is related to RAC protocol.
-          There is a client and server implementations of RAC. Note that some
-          projects are not available on Git services and should be downloaded
-          from external sources. They are marked with
-          <InlineCode>external@</InlineCode> text at the beginning of the author
-          ID. If you want to add your project to this list, please make an issue
-          on our GitHub repository.
-        </Text>
-        <Title id={"clients"}>Clients</Title>
-        <Text>
-          Here is a grid of all available client for RAC protocol with their
-          respective repository link.
-        </Text>
-        <div className={"grid grid-cols-1 md:grid-cols-2 gap-4 w-full"}>
-          {clients.map((client) => (
-            <ProjectCard
-              key={client.name}
-              name={client.name}
-              externalDownload={client.externalDownload || undefined}
-              externalLink={client.externalLink || undefined}
-              authorId={client.authorId}
-              projectGit={client.projectGit}
-              description={client.description}
-              tags={client.tags}
-            />
-          ))}
-        </div>
-        <Title id={"servers"}>Servers</Title>
-        <Text>
-          And here are the servers implementation! You can choose whatever you
-          want and setup your own RAC server.
-        </Text>
-        <div className={"grid grid-cols-1 md:grid-cols-2 gap-4 w-full"}>
-          {servers.map((server) => (
-            <ProjectCard
-              key={server.name}
-              name={server.name}
-              externalDownload={server.externalDownload}
-              externalLink={server.externalLink}
-              authorId={server.authorId}
-              projectGit={server.projectGit}
-              description={server.description}
-              tags={server.tags}
-            />
-          ))}
-        </div>
-        <Footer />
-      </main>
-    </div>
+    <main className={"flex flex-col gap-4 w-full"}>
+      <PageTitle id={"projects"}>Projects</PageTitle>
+      <Text>
+        This is a curated list of projects that is related to RAC protocol.
+        There is a client and server implementations of RAC. Note that some
+        projects are not available on Git services and should be downloaded from
+        external sources. They are marked with
+        <InlineCode>external@</InlineCode> text at the beginning of the author
+        ID. If you want to add your project to this list, please make an issue
+        on our GitHub repository.
+      </Text>
+      <Title id={"clients"}>Clients</Title>
+      <Text>
+        Here is a grid of all available client for RAC protocol with their
+        respective repository link.
+      </Text>
+      <div className={"grid grid-cols-1 md:grid-cols-2 gap-4 w-full"}>
+        {clients.map((client) => (
+          <ProjectCard
+            key={client.name}
+            name={client.name}
+            externalDownload={client.externalDownload || undefined}
+            externalLink={client.externalLink || undefined}
+            authorId={client.authorId}
+            projectGit={client.projectGit}
+            description={client.description}
+            tags={client.tags}
+          />
+        ))}
+      </div>
+      <Title id={"servers"}>Servers</Title>
+      <Text>
+        And here are the servers implementation! You can choose whatever you
+        want and setup your own RAC server.
+      </Text>
+      <div className={"grid grid-cols-1 md:grid-cols-2 gap-4 w-full"}>
+        {servers.map((server) => (
+          <ProjectCard
+            key={server.name}
+            name={server.name}
+            externalDownload={server.externalDownload}
+            externalLink={server.externalLink}
+            authorId={server.authorId}
+            projectGit={server.projectGit}
+            description={server.description}
+            tags={server.tags}
+          />
+        ))}
+      </div>
+    </main>
   );
 }
