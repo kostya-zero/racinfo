@@ -1,6 +1,4 @@
 ﻿import { ProjectCard, ProjectProps } from "@/components/ProjectCard";
-import NavBar from "@/components/NavBar";
-import Footer from "@/components/Footer";
 import Text from "@/components/blocks/Text";
 import PageTitle from "@/components/blocks/PageTitle";
 import Title from "@/components/blocks/Title";
