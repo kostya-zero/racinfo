@@ -33,7 +33,7 @@ export default function Projects() {
       projectGit: "https://gitlab.com/kiber_ogur4ik/crack",
       description:
         "Cool RAC klient for Web, Android and iOS (RAC v1 and WRAC v2)",
-      tags: ["Acrive", "WRAC", "RAC", "v2", "v1.0", "TLS"],
+      tags: ["Active", "WRAC", "RAC", "v2", "v1.0", "TLS"],
     },
     {
       name: "Tower",
