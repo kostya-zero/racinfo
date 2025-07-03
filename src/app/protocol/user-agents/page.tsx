@@ -47,6 +47,11 @@ export default function Wrac() {
       color: "Gold",
     },
     {
+      client: "crack",
+      regex: "\\u30C4<(.*?)> (.*)",
+      color: "Coral",
+    },
+    {
       client: "Snowdrop",
       regex: "\\u0D9E<(.*?)> (.*)",
       color: "Light Green",

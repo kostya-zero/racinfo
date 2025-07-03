@@ -28,6 +28,14 @@ export default function Projects() {
       tags: ["Active", "RAC", "v1.99.2"],
     },
     {
+      name: "crack",
+      authorId: "kiberOgur4ik",
+      projectGit: "https://gitlab.com/kiber_ogur4ik/crack",
+      description:
+        "Cool RAC klient for Web, Android and iOS (RAC v1 and WRAC v2)",
+      tags: ["Acrive", "WRAC", "RAC", "v2", "v1.0", "TLS"],
+    },
+    {
       name: "Tower",
       authorId: "kostya-zero",
       projectGit: "https://github.com/kostya-zero/tower",
