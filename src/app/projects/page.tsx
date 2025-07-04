@@ -14,13 +14,6 @@ export default function Projects() {
       tags: ["Active", "WRAC", "RAC", "v2", "TLS"],
     },
     {
-      name: "cRACk",
-      authorId: "pansangg",
-      projectGit: "https://github.com/pansangg/cRACk",
-      description: "TUI RAC client on Python.",
-      tags: ["Active", "RAC", "v2"],
-    },
-    {
       name: "Mefedroniy",
       authorId: "OctoBanon-Main",
       projectGit: "https://github.com/OctoBanon-Main/mefedroniy-client",
@@ -57,6 +50,13 @@ export default function Projects() {
       projectGit: "",
       description: "The official RAC client.",
       tags: ["Unknown", "RAC", "v2"],
+    },
+    {
+      name: "cRACk",
+      authorId: "pansangg",
+      projectGit: "https://github.com/pansangg/cRACk",
+      description: "TUI RAC client on Python.",
+      tags: ["Abandoned", "RAC", "v2"],
     },
     {
       name: "CRAB",
