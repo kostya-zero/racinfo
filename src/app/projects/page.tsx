@@ -33,7 +33,7 @@ export default function Projects() {
       authorId: "kostya-zero",
       projectGit: "https://github.com/kostya-zero/tower",
       description: "A modern desktop client for RAC protocol built with Tauri.",
-      tags: ["Unreleased", "WRAC", "RAC", "v2", "TLS"],
+      tags: ["Active", "WRAC", "RAC", "v2", "TLS"],
     },
     {
       name: "Snowdrop",
